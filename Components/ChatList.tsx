@@ -26,27 +26,11 @@ function ChatList() {
         <div className={`chatlist`}>
             {allrooms?.map((room) => {
                 return (
-                    <>
-                        <Link key={room.id} 
-                        href={``}
-                        // href={{pathname: `/chatroom`, query: {id: room.id, title: room.title},}}
-                        >
-                            <a 
-                            onClick={()=>onclick(room.id,room.title)}
-                            // onClick={()=>setOpen(true)}
-                            >
-                                <div className={`chatlist-item`}>{room.title}</div>
-                            </a>
-                        </Link>
-
-                        {/* <ChatView 
-                        id={room.id}
-                        open={open}
-                        passData={getdata}
-                        /> */}
-                    </>
-
-
+                    <a 
+                    onClick={()=>onclick(room.id,room.title)}
+                    >
+                        <div className={`chatlist-item`}>{room.title}</div>
+                    </a>
                 )
             })}
 

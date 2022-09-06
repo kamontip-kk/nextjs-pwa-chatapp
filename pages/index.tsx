@@ -25,7 +25,7 @@ const Home: NextPage = () => {
 
   return (
     <main className={`container`}>
-    <ChatList/>
+      <ChatList/>
     </main>
         
   )
