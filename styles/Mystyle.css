@@ -1,0 +1,119 @@
+.container{
+    text-align: center;
+    padding-top: 60px;
+}
+
+.header{
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(46, 159, 235);
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+.arrowback{
+    margin-top: 8px;
+}
+.navitem{
+    margin-left: 20px;
+}
+
+.login{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    align-items: center;
+    justify-content: center;
+}
+.loginmodal{
+    height: fit-content;
+    width: 320px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px #adadad;
+}
+input{
+    display: block;
+    border: none;
+    font-size: 20px;
+    width: 100%;
+    padding: 5px 10px;
+    background-color: rgb(221, 221, 221);
+    border-radius: 10px;
+}
+input:focus,input:active{
+    outline: none;
+}
+.submitbtn{
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.chatlist-item{
+    text-align: center;
+    justify-self: center;
+    height: fit-content;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    margin: 15px;
+    box-shadow: 2px 4px 15px #adadad;
+}
+
+.chatbackground{
+    position: absolute;
+    background-color: rgb(221, 221, 221);
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.chatroom{
+    width: 100%;
+    height: 100%;
+}
+.historymessage{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 80px 20px;
+    min-height: 100%;
+}
+.received{
+    align-self: flex-start;
+}
+.sender{
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.message{
+    background-color: white;
+    width: fit-content;
+    font-size: 20px;
+    padding: 5px 15px;
+    border-radius: 25px;
+}
+.typing{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+.sendtext-icon{
+    margin-left: 10px;
+    background: none;
+    border: none;
+}
